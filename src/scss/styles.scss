@@ -1,173 +1,26 @@
-@import "fonts";
-@import "mixins";
-@import "normalize";
-@import "bootstrap_base";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/bootstrap_base";
+
+@import "utils/layout_helpers";
 
 $font-stack: 'Pier Sans', sans-serif;
-$floatie-blue: #AFE1F7;
-$floatie-blue-dark: #8CD7F5;
+$floatie-blue: #A4E1F4;
+$floatie-blue-dark: #7AD8F2;
+$fl-sand: #FFF5BC;
+$fl-wetsand: #ffeeaf;
+$fl-sandStone: #C56B36;
+$fl-brown: #805329;
 
 body {
   font-family: $font-stack;
-  background: $floatie-blue;
-  color: white;
+  background: $fl-sand;
+  color: $fl-brown;
   @include min-bp(960px) {
     font-size: 16px;
   }
 }
-.bg {
-  display: block;
-  width: 100%;
-  height: 50%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background: $floatie-blue-dark;
-  z-index: 0;
-}
 
-.content-wrap {
-  display: flex;
-  flex-direction: column;
-  height: 95vh;
-  padding: 0 12px;
-  position: relative;
-  @include min-bp(400px) {
-    height: 100vh;
-  }
-}
-
-.main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  flex: 1 1;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 24px;
-  .wordmark {
-    display: inline-block;;
-    max-width: 200px;
-  }
-
-
-  @include min-bp(420px) {
-    margin-bottom: 64px;
-    .wordmark {
-      max-width: 260px;
-    }
-  }
-
-  @include min-bp(960px) {
-    margin-bottom: 36px;
-    font-size: 1.1em;
-    .wordmark {
-      max-width: 280px;
-    }
-
-  }
-}
-
-.main-container .floatie {
-  img {
-    max-width: 120px;
-    @include min-bp(420px) {
-      max-width: 160px;
-    }
-  }
-}
-
-.updates-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  form {
-    label {
-      font-size: .8em;
-      margin-left: 8px;
-      font-weight: normal;
-      color: white;
-      @include min-bp(960px) {
-        font-size: .9em;
-      }
-    }
-    .input-group {
-      display: flex;
-      margin-bottom: 12px;
-      $input-border-radius: 10px;
-      input#email {
-        flex: 1 1;
-        background: #AFE1F7;
-        border: none;
-        color: white;
-        padding: 8px 8px 6px 10px;
-        border-radius: 0;
-        border-top-left-radius: $input-border-radius;
-        border-bottom-left-radius: $input-border-radius;
-        min-width: 200px;
-        &:focus {
-          box-shadow: 0 0 0 1px white inset;
-          outline: none;
-        }
-        @include placeholder-styles() {
-          color: white;
-        }
-        @include min-bp(960px) {
-          min-width: 300px;
-        }
-      }
-      input[type="submit"] {
-        background: white;
-        color: $floatie-blue-dark;
-        border: none;
-        line-height: 1em;
-        border-radius: 0;
-        padding: 8px 14px 6px 14px;
-        border-top-right-radius: $input-border-radius;
-        border-bottom-right-radius: $input-border-radius;
-        &:hover {
-          background: rgba(white, .9);
-        }
-      }
-    }
-  }
-
-}
-
-.footer {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 36px;
-  @include min-bp(420px) {
-    margin-bottom: 12px;
-  }
-  font-size: 10px;
-  color: white;
-  & > a { color: rgba(white, .7); }
-  .contact-emails {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    // display: flex;
-    a {
-      color: white;
-      display: inline-block;
-      padding: 0 4px;
-
-    }
-    @include min-bp(420px) {
-      font-size: 1.2em;
-      a { padding: 0 8px; }
-    }
-    @include min-bp(960px) {
-      margin-top: 6px;
-      font-size: 1.3em;
-      a { padding: 0 16px; }
-    }
-  }
-}
+@import "home";
+@import "speak";

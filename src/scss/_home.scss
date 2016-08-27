@@ -1,0 +1,256 @@
+.home .fold{
+  background: $floatie-blue;
+  color: white;
+}
+
+.home .sky .nav {
+  text-align: center;
+  padding: 24px 0;
+  a {
+    color: white;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 4px;
+    @include min-bp(420px) {
+      padding: 6px 12px;
+      font-size: 1em;
+      margin: 0 10px;
+    }
+    @include min-bp(768px) {
+      padding: 8px 14px;
+      font-size: 1.1em;
+      margin: 0 20px;
+    }
+  }
+}
+
+.home .sky .heading {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 52px;
+  .wordmark {
+    display: inline-block;;
+    max-width: 200px;
+  }
+  @include min-bp(420px) {
+    margin-top: 24px;
+    margin-bottom: 64px;
+    .wordmark {
+      max-width: 260px;
+    }
+  }
+  @include min-bp(960px) {
+    margin-top: 64px;
+    margin-bottom: 80px;
+    font-size: 1.1em;
+    .wordmark {
+      max-width: 280px;
+    }
+  }
+}
+
+
+.home .water {
+  background: $floatie-blue-dark;
+  text-align: center;
+
+  .floatie {
+    img {
+      max-width: 120px;
+      display: inline-block;
+      margin-top: -40px;
+      margin-bottom: 24px;
+      @include min-bp(420px) {
+        max-width: 160px;
+      }
+    }
+  }
+
+  .action-buttons {
+    padding-bottom: 48px;
+    a.button {
+      color: $floatie-blue-dark;
+      &:first-of-type { margin-left: 0; }
+      &:last-of-type { margin-right: 0; }
+      @include min-bp(420px) {
+        padding: 14px 20px;
+        line-height: 1em;
+        margin: 0 28px;
+      }
+    }
+  }
+}
+
+//////////
+// CONTENT
+//////////////////////////////
+
+.home .home-section {
+  padding: 48px 0 72px;
+  color: $fl-sandStone;
+  @include min-bp(420px) {
+    font-size: 1.4em;
+    line-height: 1.7em;
+  }
+  .section-header {
+    font-size: 1.9em;
+    line-height: 1.5em;
+    margin-top: 14px;
+    color: $fl-brown;
+    font-weight: normal;
+    text-align: center;
+  }
+  .section-subheader {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: normal;
+  }
+}
+
+// Intro
+////////////////////
+
+.home-section.intro {
+  background: $fl-wetsand;
+  text-align: center;
+  a { color: $fl-brown; }
+}
+
+
+// Location
+////////////////////
+
+.home-section.where {
+  a { color: $fl-brown; }
+  .locations {
+    margin-top: 20px;
+    h4 { margin: 0; }
+    .location {
+      .address { margin: 0; }
+    }
+  }
+}
+
+
+// Schedule
+////////////////////
+
+.home-section.schedule {
+  background: $floatie-blue;
+  color: white;
+  .section-header {
+    color: white;
+  }
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    flex: 1 1 100%;
+    @include min-bp(490px) {
+      flex: 1 1 50%;
+      padding: 0 12px;
+      font-size: 1.2em;
+      &.day1 { padding-left: 0; }
+      &.day2 { padding-right: 0; }
+    }
+    .times {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        display: flex;
+        margin-bottom: 16px;
+      }
+      .time {
+        display: inline-block;
+        margin-right: 25px;
+        flex: 0 0 30%;
+      }
+    }
+  }
+}
+
+
+// Faqs
+////////////////////
+
+.home-section.faqs {
+  background: $fl-wetsand;
+  a { color: $fl-brown; }
+}
+
+
+
+// Faqs
+////////////////////
+.home-section.sponsors {
+  a { color: $fl-brown; }
+  .sponsor-row {
+    margin-bottom: 64px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+// CTAs
+////////////////////
+
+.home-section.calls-to-action {
+  background: white;
+  text-align: center;
+  .section-header {
+    color: $fl-sandStone;
+  }
+  .button {
+    background: $fl-sandStone;
+    color: white;
+    &:first-of-type { margin-left: 0; }
+    &:last-of-type { margin-right: 0; }
+    @include min-bp(420px) {
+      padding: 14px 20px;
+      line-height: 1em;
+      margin: 0 28px;
+    }
+  }
+}
+
+.footer {
+  background: $floatie-blue;
+  text-align: center;
+  padding: 24px;
+  color: white;
+  font-size: 14px;
+  .footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @include min-bp(490px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+  .heart {
+    a { color: rgba(white, .7); }
+    margin-bottom: 10px;
+    @include min-bp(490px) {
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-emails {
+    @include min-bp(490px) {
+      text-align: right;
+    }
+    a {
+      color: white;
+      display: inline-block;
+      padding: 0 4px;
+    }
+  }
+}
