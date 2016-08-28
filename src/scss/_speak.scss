@@ -32,9 +32,16 @@
   }
 }
 
-.fa{
+.fa.fa-chevron-left{
   color: white;
   margin-right: 20px;
+  font-size: 20px;
+  margin-top:8px;
+  @media (max-width: 570px){
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
 }
 
 //////////
