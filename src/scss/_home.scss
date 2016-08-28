@@ -51,6 +51,10 @@
   width: 90px;
 }
 
+.date-location{
+
+}
+
 .home .sky .heading {
   text-align: center;
   // margin-top: 12px;
@@ -96,14 +100,24 @@
   .action-buttons {
     padding-bottom: 48px;
     a.button {
-      color: $floatie-blue-dark;
       &:first-of-type { margin-left: 0; }
       &:last-of-type { margin-right: 0; }
       @include min-bp(420px) {
         padding: 14px 20px;
-        line-height: 1em;
-        margin: 0 28px;
+        // line-height: 1em;
+        margin: 0 14px;
       }
+    }
+    .register {
+      color: $floatie-blue-dark;
+      font-size: 20px;
+      width: 140px;
+    }
+    .other {
+      color: white;
+      background: $floatie-blue;
+      width: 100px;
+      line-height: 1em;
     }
   }
 }
