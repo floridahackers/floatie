@@ -47,19 +47,23 @@
   }
 }
 
+.title-host {
+  width: 90px;
+}
+
 .home .sky .heading {
   text-align: center;
   // margin-top: 12px;
   // margin-bottom: 52px;
   .wordmark {
     display: inline-block;;
-    max-width: 200px;
+    min-width: 260px;
   }
   @include min-bp(420px) {
     margin-top: 24px;
     margin-bottom: 64px;
     .wordmark {
-      max-width: 260px;
+      max-width: 360px;
     }
   }
   @include min-bp(960px) {
@@ -67,7 +71,7 @@
     margin-bottom: 80px;
     font-size: 1.1em;
     .wordmark {
-      max-width: 280px;
+      max-width: 420px;
     }
   }
 }
