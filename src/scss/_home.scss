@@ -324,7 +324,7 @@
     }
 
   }
-  .heart {
+  .madewithlove {
     a { color: rgba(white, .7); }
     margin-bottom: 10px;
     @include min-bp(490px) {
@@ -332,6 +332,42 @@
       margin-bottom: 0;
     }
   }
+//Beating heart
+  .heart {
+  a { color: rgba(white, .7); }
+  margin-bottom: 10px;
+  @include min-bp(490px) {
+    text-align: right;
+    margin-bottom: 0;
+  }
+	color: white;
+	display: block;
+	text-align: center;
+	vertical-align: bottom;
+  }
+  .heart i {
+    color: #FF4D40;
+    text-decoration: none;
+  }
+  .heart .fa {
+    color: white;
+    margin: 0 3px;
+    font-size: 10px;
+    animation: pound 0.35s infinite alternate;
+    -webkit-animation: pound 0.35s infinite alternate;
+  }
+
+  @-webkit-keyframes pound {
+    to {
+      transform: scale(1.4);
+    }
+  }
+  @keyframes pound {
+    to {
+      transform: scale(1.4);
+    }
+  }
+///////
 
   .contact-emails {
     @include min-bp(490px) {
