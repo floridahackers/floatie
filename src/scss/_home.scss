@@ -57,8 +57,6 @@
 
 .home .sky .heading {
   text-align: center;
-  // margin-top: 12px;
-  // margin-bottom: 52px;
   .wordmark {
     display: inline-block;;
     min-width: 260px;
@@ -233,6 +231,19 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+    .sponsor-image-div{
+      height: 160px;
+    }
+    .sponsor-image{
+      margin: auto;
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    .vertical{
+      height: 160px;
+    }
     .sponsor-level{
       color: black;
       text-align: center;
@@ -241,10 +252,19 @@
       color: black;
       margin-bottom: 2px;
     }
+    .sponsor-quote{
+      margin-top: 30px;
+      font-size: 16px;
+      color: black;
+      line-height: 160%;
+    }
     .quote-credit{
       margin: 0px;
-      font-size: 16px;
+      font-size: 12px;
       text-align: right;
+    }
+    .host-credit{
+      font-size: 16px;
     }
     .borderLeft{
       border-left: 10px solid black;
@@ -257,6 +277,9 @@
         bottom: 50px;
         border-left-width: 7px;
       }
+    }
+    p{
+      margin-bottom: 0px;
     }
   }
 }
