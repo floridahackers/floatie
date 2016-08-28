@@ -16,6 +16,37 @@
   padding: 0;
 }
 
+.action-buttons {
+  a.button {
+    // &:first-of-type { margin-left: 0; }
+    // &:last-of-type { margin-right: 0; }
+    @include min-bp(420px) {
+      padding: 14px 20px;
+      // line-height: 1em;
+      margin: 0 14px;
+    }
+  }
+  .register {
+    color: $floatie-blue-dark;
+    font-size: 20px;
+    width: 140px;
+  }
+  .other {
+    color: white;
+    background: $floatie-blue;
+    width: 100px;
+    font-size: 14px;
+    line-height: 1em;
+  }
+  .final-call{
+    background: black;
+    background: $fl-sandStone;
+    color: white;
+  }
+}
+
+
+///home
 .home .fold{
   // min-height: 100vh;
   background: $floatie-blue;
@@ -49,10 +80,6 @@
 
 .title-host {
   width: 90px;
-}
-
-.date-location{
-
 }
 
 .home .sky .heading {
@@ -92,30 +119,6 @@
       @include min-bp(420px) {
         max-width: 160px;
       }
-    }
-  }
-
-  .action-buttons {
-    padding-bottom: 48px;
-    a.button {
-      &:first-of-type { margin-left: 0; }
-      &:last-of-type { margin-right: 0; }
-      @include min-bp(420px) {
-        padding: 14px 20px;
-        // line-height: 1em;
-        margin: 0 14px;
-      }
-    }
-    .register {
-      color: $floatie-blue-dark;
-      font-size: 20px;
-      width: 140px;
-    }
-    .other {
-      color: white;
-      background: $floatie-blue;
-      width: 100px;
-      line-height: 1em;
     }
   }
 }
@@ -293,17 +296,6 @@
   text-align: center;
   .section-header {
     color: $fl-sandStone;
-  }
-  .button {
-    background: $fl-sandStone;
-    color: white;
-    &:first-of-type { margin-left: 0; }
-    &:last-of-type { margin-right: 0; }
-    @include min-bp(420px) {
-      padding: 14px 20px;
-      line-height: 1em;
-      margin: 0 28px;
-    }
   }
 }
 
