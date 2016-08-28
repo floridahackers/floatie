@@ -144,17 +144,23 @@
   }
   .section-subheader {
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: normal;
     color: #805329;
   }
 }
 
+.borderBottom{
+  border-bottom: 10px $fl-wetsand solid;
+  position: absolute;
+  left: 100px;
+  right: 100px;
+}
 // Intro
 ////////////////////
 
 .home-section.intro {
-  background: $fl-wetsand;
+  background: $fl-sand;
   text-align: center;
   a { color: $fl-brown; }
 }
@@ -219,11 +225,13 @@
 ////////////////////
 
 .home-section.faqs {
-  background: $fl-wetsand;
-  a { color: $fl-brown; }
+  background: $floatie-blue-dark;
+  a { color: rgba(white, .6); }
+  .section-header{
+    color: white;
+  }
+  color: white;
 }
-
-
 
 // Sponsors
 ////////////////////
