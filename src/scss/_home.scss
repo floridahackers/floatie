@@ -224,7 +224,7 @@
 
 
 
-// Faqs
+// Sponsors
 ////////////////////
 .home-section.sponsors {
   a { color: $fl-brown; }
@@ -232,6 +232,31 @@
     margin-bottom: 64px;
     &:last-of-type {
       margin-bottom: 0;
+    }
+    .sponsor-level{
+      color: black;
+      text-align: center;
+    }
+    .host-quote{
+      color: black;
+      margin-bottom: 2px;
+    }
+    .quote-credit{
+      margin: 0px;
+      font-size: 16px;
+      text-align: right;
+    }
+    .borderLeft{
+      border-left: 10px solid black;
+      position: absolute;
+      top: 22px;
+      bottom: 40px;
+      right: 100%;
+      @media (max-width: 398px){
+        top: 14px;
+        bottom: 50px;
+        border-left-width: 7px;
+      }
     }
   }
 }
