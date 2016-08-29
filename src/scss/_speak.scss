@@ -49,6 +49,7 @@
 //////////////////////////////
 
 .speak .speak-section {
+  background-color: $fl-sand;
   padding: 48px 0 72px;
   color: $fl-sandStone;
   @include min-bp(420px) {
@@ -88,13 +89,15 @@
     line-height: 1.7em;
     position: relative;
     @include min-bp(490px) {
-      margin-left: 95px;
+      margin-left: 30px;
+      // margin-left: 95px;
       &:before {
         position: absolute;
         content: "";
-        left: -95px;
-        width: 75px;
-        height: 75px;
+        left: -30px;
+        width: 0px;
+        // width: 75px;
+        height: 85px;
         display: inline-block;
         border: 5px solid $fl-sandStone;
         border-radius: 10px;
