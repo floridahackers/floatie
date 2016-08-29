@@ -296,12 +296,16 @@
     .host-credit{
       font-size: 16px;
     }
+    .host-logo {
+      margin: 30px auto;
+    }
     .borderLeft{
       border-left: 10px solid white;
       position: absolute;
       top: 22px;
       bottom: 40px;
       right: 100%;
+      border-radius: 10px;
       @media (max-width: 398px){
         top: 14px;
         bottom: 50px;
