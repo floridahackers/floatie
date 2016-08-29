@@ -85,6 +85,9 @@
 }
 
 .home .sky .heading {
+  a { color: white; }
+  a:hover { color: white;
+  text-decoration: none;}
   text-align: center;
   .wordmark {
     display: inline-block;;
