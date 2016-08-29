@@ -171,12 +171,19 @@
 
 .home-section.where {
   a { color: $fl-brown; }
+  padding: 0;
+  padding-bottom: 40px;
   .locations {
-    margin-top: 20px;
+    // text-align: right;
     h4 { margin: 0; }
     .location {
+      // position: absolute;
+      // right: 0;
       .address { margin: 0; }
     }
+  }
+  .description {
+    margin-bottom: 20px;
   }
 }
 
