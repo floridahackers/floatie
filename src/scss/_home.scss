@@ -170,15 +170,19 @@
 ////////////////////
 
 .home-section.where {
-  a { color: $fl-brown; }
-  padding: 0;
-  padding-bottom: 40px;
+  a { color: rgba(white, .7); }
+  .section-header {
+    color: white;
+  }
+  padding: 40px 0;
+  color: white;
   .locations {
     // text-align: right;
     h4 { margin: 0; }
     .location {
       // position: absolute;
       // right: 0;
+      padding: 0;
       .address { margin: 0; }
     }
   }
@@ -192,7 +196,7 @@
 ////////////////////
 
 .home-section.schedule {
-  background: $floatie-blue;
+  background: $floatie-blue-dark;
   color: white;
   .section-header {
     color: white;
@@ -232,12 +236,11 @@
 ////////////////////
 
 .home-section.faqs {
-  background: $floatie-blue-dark;
+  background: $fl-sand;
   a { color: rgba(white, .6); }
-  .section-header{
-    color: white;
+  h3{
+    color: $fl-brown;
   }
-  color: white;
 }
 
 .faqs .question {
@@ -248,7 +251,11 @@
 // Sponsors
 ////////////////////
 .home-section.sponsors {
-  a { color: $fl-brown; }
+  background-color: $floatie-blue-dark;
+  a { color: rgba(white, 0.7) }
+  .section-header {
+    color: white;
+  }
   .sponsor-row {
     margin-bottom: 64px;
     &:last-of-type {
@@ -268,17 +275,17 @@
       height: 160px;
     }
     .sponsor-level{
-      color: black;
+      color: white;
       text-align: center;
     }
     .host-quote{
-      color: black;
+      color: white;
       margin-bottom: 2px;
     }
     .sponsor-quote{
       margin-top: 30px;
       font-size: 16px;
-      color: black;
+      color: white;
       line-height: 160%;
     }
     .quote-credit{
@@ -290,7 +297,7 @@
       font-size: 16px;
     }
     .borderLeft{
-      border-left: 10px solid black;
+      border-left: 10px solid white;
       position: absolute;
       top: 22px;
       bottom: 40px;

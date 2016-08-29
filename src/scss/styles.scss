@@ -15,8 +15,8 @@ $fl-brown: #7b5521;
 
 body {
   font-family: $font-stack;
-  background: $fl-sand;
-  color: $fl-brown;
+  background: $floatie-blue;
+  color: white;
   @include min-bp(960px) {
     font-size: 16px;
   }
