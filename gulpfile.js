@@ -11,7 +11,7 @@ gulp.task('sass', function () {
     autoprefixer,
     cssnano
   ];
-  return gulp.src('./src/scss/*.scss')
+  return gulp.src('./src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest('./assets/css'))
