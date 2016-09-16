@@ -20,7 +20,7 @@
   a.button {
     // &:first-of-type { margin-left: 0; }
     // &:last-of-type { margin-right: 0; }
-    @include min-bp(420px) {
+    @include min-bp(490px) {
       padding: 14px 20px;
       // line-height: 1em;
       margin: 0 14px;
@@ -28,8 +28,12 @@
   }
   .register {
     color: $floatie-blue-dark;
-    font-size: 20px;
-    width: 140px;
+    width: auto;
+    font-size: 1.1em;
+    @include min-bp(490px) {
+      font-size: 20px;
+      width: 140px;
+    }
   }
   .other {
     color: white;
