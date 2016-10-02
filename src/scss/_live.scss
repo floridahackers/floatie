@@ -196,6 +196,9 @@
       &.purple {
         box-shadow: 16px 0 0 0 inset #CC90FC;
       }
+      &.brown {
+        box-shadow: 16px 0 0 0 inset #A4885E;
+      }
       &.group-start {
         &:before {
           content: '';
@@ -223,6 +226,9 @@
         }
         &.purple {
           &:before { background: #CC90FC; }
+        }
+        &.brown {
+          &:before { background: #A4885E; }
         }
       }
       &.group-end {
@@ -252,6 +258,9 @@
         }
         &.purple {
           &:after { background: #CC90FC; }
+        }
+        &.brown {
+          &:after { background: #A4885E; }
         }
       }
 
